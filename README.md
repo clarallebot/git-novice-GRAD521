@@ -1,7 +1,7 @@
 git-novice
 ==========
 
-An introduction to version control for novices using Git.
+Modified version of nn introduction to version control for novices using Git from Software Carpentry.
 Please see <https://swcarpentry.github.io/git-novice/> for a rendered version of this material,
 [the lesson template documentation][lesson-example]
 for instructions on formatting, building, and submitting material,
