@@ -1,13 +1,13 @@
 ---
-title: Creating a Repository
+title: Creating a Local Repository
 teaching: 10
 exercises: 0
 questions:
-- "Where does Git store information?"
+- "How do I store a repository locally?"
 objectives:
-- "Create a local Git repository."
+- "Clone a local Git repository from a remote GitHub repository."
 keypoints:
-- "`git init` initializes a repository."
+- "`git clone` clones a repository."
 ---
 
 Once Git is configured,
