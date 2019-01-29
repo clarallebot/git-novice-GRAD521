@@ -12,32 +12,37 @@ keypoints:
 
 Once Git is configured,
 we can start using it.
-Let's create a directory for our work and then move into that directory:
+Let's choose the right directory for our work and then move into that directory:
 
 ~~~
-$ mkdir planets
-$ cd planets
+$ cd ~/Desktop
+$ mkdir GRAD521_DMP
+$ cd GRAD521_DMP
 ~~~
 {: .bash}
 
-Then we tell Git to make `planets` a [repository]({{ page.root }}/reference/#repository)—a place where
-Git can store versions of our files:
+Then we tell Git to clone our remote [repository]({{ page.root }}/reference/#repository) that we created in GitHub. 
 
 ~~~
-$ git init
+$ git clone https://github.com/username/GRAD521_DMPSurname_2019.git .
 ~~~
 {: .bash}
 
 If we use `ls` to show the directory's contents,
-it appears that nothing has changed:
+it appears that the two documents from our GitHub directory have appeared into the directory:
 
 ~~~
 $ ls
 ~~~
 {: .bash}
 
-But if we add the `-a` flag to show everything,
-we can see that Git has created a hidden directory within `planets` called `.git`:
+~~~
+README.md  index.md
+~~~
+{: .output}
+
+If we add the `-a` flag to show everything, including hidden files,
+we can see that Git has created a hidden directory within `GRAD521_DMP` called `.git`:
 
 ~~~
 $ ls -a
@@ -45,7 +50,7 @@ $ ls -a
 {: .bash}
 
 ~~~
-.	..	.git
+./         ../        .git/      README.md  index.md
 ~~~
 {: .output}
 
@@ -62,11 +67,9 @@ $ git status
 {: .bash}
 
 ~~~
-# On branch master
-#
-# Initial commit
-#
-nothing to commit (create/copy files and use "git add" to track)
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working tree clean
 ~~~
 {: .output}
 
