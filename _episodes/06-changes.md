@@ -320,7 +320,7 @@ nothing to commit, working tree clean
 ~~~
 {: .output}
 
-The working tree is clean and we have nothing to commit, but we see a message saying that the branch is ahead of origin/master. `origin` is the default name that Git gives to the remote repository. Git knows what the remote repository is because we set that up when we cloned the repository. If you had started the repository locally in your computer first, you would have to set up the origin repository. What the sentence means is that git knows that what we have made changes on our local repository that are not in GitHub. Our local branch is ahead of the remote branch. Let's see how to fix that. 
+The working tree is clean and we have nothing to commit, but we see a message saying that the branch is ahead of origin/master. `origin` is a local nickname for your remote repository that is set by default by Git. Git knows what the remote repository is because we set that up when we cloned the repository. If you had started the repository locally in your computer first, you would have to set up the origin repository. What the sentence means is that git knows that what we have made changes on our local repository that are not in GitHub. Our local branch is ahead of the remote branch. Let's see how to fix that. 
 
 > ## Paging the Log
 >
