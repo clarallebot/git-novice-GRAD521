@@ -38,6 +38,8 @@ where Surname is your surname. It will take a minute or two to be ready.
 
 ![importform](../fig/import_importform.png)
 
+When you import a repository you are saving a copy of another repository, including files, and history. You created a new repository, and that means that you can modify it as you wish without affecting the original repository. (Of course, if you do that with other repository make sure to check the terms of use or license).
+
 Explore the GitHub space. The first thing you will see is that there are two files in the repository: a README.md and an index.md These are markdown files. Markdown is a language to write formatted text that is very intuitive, and that is quite useful to work in GitHub, so we will use if for this lesson. The content of the README.md file is what you see under the list of files. 
 
 ![markdownrendered](../fig/import_readmemarkdown.png)
