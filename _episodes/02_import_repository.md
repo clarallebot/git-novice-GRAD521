@@ -12,7 +12,6 @@ keypoints:
 - 
 ---
 
-Once Git is configured, we can start using it.
 
 Our project for this lesson will be to create a repository to write our Data Management Plan. 
 
