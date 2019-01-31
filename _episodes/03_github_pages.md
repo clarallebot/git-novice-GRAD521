@@ -30,7 +30,7 @@ https://username.github.io/GRAD521_DMPSurname_2019
 
 Now visit the website. It should look like this:
 
-![websiteinitialview](../fig/pages_websiteinitialview.png | width=100)
+![websiteinitialview](../fig/pages_websiteinitialview.png)
 
 Now go back to your repository and look at the file index.md This is the file that is being shown in the website. Not that beautiful (yet), but the information is there. 
 
