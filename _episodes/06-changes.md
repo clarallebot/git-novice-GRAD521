@@ -303,6 +303,8 @@ Date:   Wed Jan 30 17:09:58 2019 -0800
 ~~~
 {: .output}
 
+`git log` lists all commits made to a repository in reverse chronological order. The listing for each commit includes the commit's full identifier (which starts with the same characters as the short identifier printed by the `git commit` command earlier), the commit's author, when it was created, and the log message Git was given when the commit was created.
+
 The list shows actually more commits than just the two we just made. It shows all the changes that I made when I was creating the repository. When we imported the repository we imported not just the files, but also the history of the files.  
 
 Now check our status:
