@@ -1,5 +1,5 @@
 ---
-title: Synchronisinc local rep and GitHub
+title: Sync local rep and GitHub
 teaching: 30
 exercises: 0
 questions:
