@@ -3,126 +3,71 @@ title: Remotes in GitHub
 teaching: 30
 exercises: 0
 questions:
-- "How do I share my changes with others on the web?"
+- "How do I work with a local and a remote repository?"
 objectives:
 - "Explain what remote repositories are and why they are useful."
 - "Push to or pull from a remote repository."
 keypoints:
 - "A local Git repository can be connected to one or more remote repositories."
-- "Use the HTTPS protocol to connect to remote repositories until you have learned how to set up SSH."
 - "`git push` copies changes from a local repository to a remote repository."
 - "`git pull` copies changes from a remote repository to a local repository."
 ---
 
-Version control really comes into its own when we begin to collaborate with
-other people.  We already have most of the machinery we need to do this; the
-only thing missing is to copy changes from one repository to another.
-
-Systems like Git allow us to move work between any two repositories.  In
-practice, though, it's easiest to use one copy as a central hub, and to keep it
-on the web rather than on someone's laptop.  Most programmers use hosting
-services like [GitHub](http://github.com), [BitBucket](http://bitbucket.org) or
-[GitLab](http://gitlab.com/) to hold those master copies; we'll explore the pros
-and cons of this in the final section of this lesson.
-
-Let's start by sharing the changes we've made to our current project with the
-world.  Log in to GitHub, then click on the icon in the top right corner to
-create a new repository called `planets`:
-
-![Creating a Repository on GitHub (Step 1)](../fig/github-create-repo-01.png)
-
-Name your repository "planets" and then click "Create Repository":
-
-![Creating a Repository on GitHub (Step 2)](../fig/github-create-repo-02.png)
-
-As soon as the repository is created, GitHub displays a page with a URL and some
-information on how to configure your local repository:
-
-![Creating a Repository on GitHub (Step 3)](../fig/github-create-repo-03.png)
-
-This effectively does the following on GitHub's servers:
-
-~~~
-$ mkdir planets
-$ cd planets
-$ git init
-~~~
-{: .bash}
-
-Our local repository still contains our earlier work on `mars.txt`, but the
-remote repository on GitHub doesn't contain any files yet:
-
-![Freshly-Made GitHub Repository](../fig/git-freshly-made-github-repo.svg)
-
-The next step is to connect the two repositories.  We do this by making the
-GitHub repository a [remote]({{ page.root }}/reference/#remote) for the local repository.
-The home page of the repository on GitHub includes the string we need to
-identify it:
-
-![Where to Find Repository URL on GitHub](../fig/github-find-repo-string.png)
-
-Click on the 'HTTPS' link to change the [protocol]({{ page.root }}/reference/#protocol) from
-SSH to HTTPS.
-
-> ## HTTPS vs. SSH
->
-> We use HTTPS here because it does not require additional configuration.  After
-> the workshop you may want to set up SSH access, which is a bit more secure, by
-> following one of the great tutorials from
-> [GitHub](https://help.github.com/articles/generating-ssh-keys),
-> [Atlassian/BitBucket](https://confluence.atlassian.com/display/BITBUCKET/Set+up+SSH+for+Git)
-> and [GitLab](https://about.gitlab.com/2014/03/04/add-ssh-key-screencast/)
-> (this one has a screencast).
-{: .callout}
-
-![Changing the Repository URL on GitHub](../fig/github-change-repo-string.png)
-
-Copy that URL from the browser, go into the local `planets` repository, and run
-this command:
-
-~~~
-$ git remote add origin https://github.com/vlad/planets.git
-~~~
-{: .bash}
-
-Make sure to use the URL for your repository rather than Vlad's: the only
-difference should be your username instead of `vlad`.
-
-We can check that the command has worked by running `git remote -v`:
-
-~~~
-$ git remote -v
-~~~
-{: .bash}
-
-~~~
-origin   https://github.com/vlad/planets.git (push)
-origin   https://github.com/vlad/planets.git (fetch)
-~~~
-{: .output}
-
-The name `origin` is a local nickname for your remote repository: we could use
-something else if we wanted to, but `origin` is by far the most common choice.
-
-Once the nickname `origin` is set up, this command will push the changes from
-our local repository to the repository on GitHub:
+Our remote repository and our local repository are different. We have made changes to our local repository and want to update GitHub. This command will push the changes from our local repository to the repository on GitHub:
 
 ~~~
 $ git push origin master
 ~~~
 {: .bash}
 
+
 ~~~
-Counting objects: 9, done.
-Delta compression using up to 4 threads.
-Compressing objects: 100% (6/6), done.
-Writing objects: 100% (9/9), 821 bytes, done.
-Total 9 (delta 2), reused 0 (delta 0)
-To https://github.com/vlad/planets
- * [new branch]      master -> master
-Branch master set up to track remote branch master from origin.
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 318 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/username/GRAD521_DMPSurname_2019.git
+   873b2a1..1c2321f  master -> master
 ~~~
 {: .output}
+
+Our local and remote repositories are now in this state:
+
+![GitHub Repository After First Push](../fig/github-repo-after-first-push.svg)
+
+Navigate to GitHub and check the index.md and the commits listed. You should see the changes we just worked on from our local repository.
+
+The information can go both ways, we can also change the documents in GitHub and transfer the changes to our local computer. Let's make a change again in GitHub.
+
+~~~
+$ git pull origin master
+~~~
+{: .bash}
+
+~~~
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/clarallebot/GRAD521_DMPtemplate
+ * branch            master     -> FETCH_HEAD
+   c3279ca..949e394  master     -> origin/master
+Merge made by the 'recursive' strategy.
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+~~~
+{: .output}
+
+Version control really comes into its own when we begin to collaborate with
+other people.  Systems like Git allow us to move work between any two repositories.  In
+practice, though, it's easiest to use one copy as a central hub, and to keep it
+on the web rather than on someone's laptop.  Most programmers use hosting
+services like [GitHub](http://github.com), [BitBucket](http://bitbucket.org) or
+[GitLab](http://gitlab.com/) to hold those master copies; we'll explore the pros
+and cons of this in the final section of this lesson.
 
 > ## Proxy
 >
@@ -169,38 +114,10 @@ Branch master set up to track remote branch master from origin.
 > to make git default to using the terminal for usernames and passwords.
 {: .callout}
 
-Our local and remote repositories are now in this state:
-
-![GitHub Repository After First Push](../fig/github-repo-after-first-push.svg)
-
-> ## The '-u' Flag
->
-> You may see a `-u` option used with `git push` in some documentation.  It is
-> related to concepts we cover in our intermediate lesson, and can safely be
-> ignored for now.
-{: .callout}
-
-We can pull changes from the remote repository to the local one as well:
-
-~~~
-$ git pull origin master
-~~~
-{: .bash}
-
-~~~
-From https://github.com/vlad/planets
- * branch            master     -> FETCH_HEAD
-Already up-to-date.
-~~~
-{: .output}
-
-Pulling has no effect in this case because the two repositories are already
-synchronized.  If someone else had pushed some changes to the repository on
-GitHub, though, this command would download them to our local repository.
 
 > ## GitHub GUI
 >
-> Browse to your `planets` repository on GitHub.
+> Browse to your `GRAD521_DMPSurname_2019` repository on GitHub.
 > Under the Code tab, find and click on the text that says "XX commits" (where "XX" is some number).
 > Hover over, and click on, the three buttons to the right of each commit.
 > What information can you gather/explore from these buttons?
@@ -222,23 +139,6 @@ GitHub, though, this command would download them to our local repository.
 > How is "git push" different from "git commit"?
 {: .challenge}
 
-> ## Fixing Remote Settings
->
-> It happens quite often in practice that you made a typo in the
-> remote URL. This exercice is about how to fix this kind of issues.
-> First start by adding a remote with an invalid URL:
->
-> ~~~
-> git remote add broken https://github.com/this/url/is/invalid
-> ~~~
-> {: .bash}
->
-> Do you get an error when adding the remote? Can you think of a
-> command that would make it obvious that your remote URL was not
-> valid? Can you figure out how to fix the URL (tip: use `git remote
-> -h`)? Don't forget to clean up and remove this remote once you are
-> done with this exercise.
-{: .challenge}
 
 > ## GitHub License and README files
 >
