@@ -281,7 +281,31 @@ but not yet committed.
 ![The Git Staging Area](../fig/git-staging-area.svg)
 
 
-Let's check our status:
+Let's look at the history of what we've done so far:
+
+~~~
+$ git log
+~~~
+{: .bash}
+
+~~~
+commit d407efb81ac0100ad919f92021f6134ca161baf9
+Author: Clara Llebot <clara.llebot@oregonstate.edu>
+Date:   Wed Jan 30 17:18:43 2019 -0800
+
+    Change link to Repository
+
+commit f3f9619847e3421700dc073c1769591f7f9b7cec
+Author: Clara Llebot <clara.llebot@oregonstate.edu>
+Date:   Wed Jan 30 17:09:58 2019 -0800
+
+    Start descriptions of the dataset
+~~~
+{: .output}
+
+The list shows actually more commits than just the two we just made. It shows all the changes that I made when I was creating the repository. When we imported the repository we imported not just the files, but also the history of the files.  
+
+Now check our status:
 
 ~~~
 $ git status
@@ -290,37 +314,13 @@ $ git status
 
 ~~~
 On branch master
-nothing to commit, working directory clean
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+nothing to commit, working tree clean
 ~~~
 {: .output}
 
-and look at the history of what we've done so far:
-
-~~~
-$ git log
-~~~
-{: .bash}
-
-~~~
-commit 005937fbe2a98fb83f0ade869025dc2636b4dad5
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
-Date:   Thu Aug 22 10:14:07 2013 -0400
-
-    Discuss concerns about Mars' climate for Mummy
-
-commit 34961b159c27df3b475cfe4415d94a6d1fcd064d
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
-Date:   Thu Aug 22 10:07:21 2013 -0400
-
-    Add concerns about effects of Mars' moons on Wolfman
-
-commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
-Date:   Thu Aug 22 09:51:46 2013 -0400
-
-    Start notes on Mars as a base
-~~~
-{: .output}
+The working tree is clean and we have nothing to commit, but we see a message saying that the branch is ahead of origin/master. `origin` is the default name that Git gives to the remote repository. Git knows what the remote repository is because we set that up when we cloned the repository. If you had started the repository locally in your computer first, you would have to set up the origin repository. What the sentence means is that git knows that what we have made changes on our local repository that are not in GitHub. Our local branch is ahead of the remote branch. Let's see how to fix that. 
 
 > ## Paging the Log
 >
