@@ -15,8 +15,6 @@ keypoints:
 
 Our project for this lesson will be to create a repository to write our Data Management Plan. 
 
-A repository is a storage area where a version control system stores the full history of commits of a project and information about who changed what, when. To commit means to record the current state of a set of files, so each commit would be each set of changes that is recorded in a repository.
-
 We can start repositories in many different ways. We could create a local repository in our computer, create a new repository in GitHub, or copy somebody's elses repository. Let's copy an already existing repository. 
 
 I have created a template repository in https://github.com/clarallebot/GRAD521_DMPtemplate that you will import to your account.
