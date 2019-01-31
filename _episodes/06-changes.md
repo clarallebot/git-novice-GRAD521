@@ -17,35 +17,22 @@ keypoints:
 - "Always write a log message when committing changes."
 ---
 
-Let's create a file called `mars.txt` that contains some notes
-about the Red Planet's suitability as a base.
-(We'll use `nano` to edit the file;
+Let's edit our file `index.md`. We'll use `nano` to edit the file;
 you can use whatever editor you like.
-In particular, this does not have to be the `core.editor` you set globally earlier.)
 
 ~~~
-$ nano mars.txt
+$ nano index.md
 ~~~
 {: .bash}
 
-Type the text below into the `mars.txt` file:
+Type the text below into the `index.md` file:
 
 ~~~
-Cold and dry, but everything is my favorite color
+Two types of data will be generated
 ~~~
 {: .output}
 
-`mars.txt` now contains a single line, which we can see by running:
-
-~~~
-$ ls
-~~~
-{: .bash}
-
-~~~
-mars.txt
-~~~
-{: .output}
+`index.md` now contains a line under the first header. We can see the contents of the whole document by running:
 
 ~~~
 $ cat mars.txt
@@ -53,12 +40,25 @@ $ cat mars.txt
 {: .bash}
 
 ~~~
-Cold and dry, but everything is my favorite color
+# Data description
+Two types of data will be generated
+
+# Roles and responsibilities
+
+# Data standards and metadata
+
+# Storage and security
+
+# Access and data sharing
+
+# Archiving and preservation
+
+Repository with source code [here](https://github.com/clarallebot/GRAD521_DMPtemplate)
 ~~~
 {: .output}
 
 If we check the status of our project again,
-Git tells us that it's noticed the new file:
+Git tells us that it's noticed the change:
 
 ~~~
 $ git status
@@ -67,164 +67,17 @@ $ git status
 
 ~~~
 On branch master
-
-Initial commit
-
-Untracked files:
-   (use "git add <file>..." to include in what will be committed)
-
-	mars.txt
-nothing added to commit but untracked files present (use "git add" to track)
-~~~
-{: .output}
-
-The "untracked files" message means that there's a file in the directory
-that Git isn't keeping track of.
-We can tell Git to track a file using `git add`:
-
-~~~
-$ git add mars.txt
-~~~
-{: .bash}
-
-and then check that the right thing happened:
-
-~~~
-$ git status
-~~~
-{: .bash}
-
-~~~
-On branch master
-
-Initial commit
-
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-
-	new file:   mars.txt
-
-~~~
-{: .output}
-
-Git now knows that it's supposed to keep track of `mars.txt`,
-but it hasn't recorded these changes as a commit yet.
-To get it to do that,
-we need to run one more command:
-
-~~~
-$ git commit -m "Start notes on Mars as a base"
-~~~
-{: .bash}
-
-~~~
-[master (root-commit) f22b25e] Start notes on Mars as a base
- 1 file changed, 1 insertion(+)
- create mode 100644 mars.txt
-~~~
-{: .output}
-
-When we run `git commit`,
-Git takes everything we have told it to save by using `git add`
-and stores a copy permanently inside the special `.git` directory.
-This permanent copy is called a [commit]({{ page.root }}/reference/#commit)
-(or [revision]({{ page.root }}/reference/#revision)) and its short identifier is `f22b25e`
-(Your commit may have another identifier.)
-
-We use the `-m` flag (for "message")
-to record a short, descriptive, and specific comment that will help us remember later on what we did and why.
-If we just run `git commit` without the `-m` option,
-Git will launch `nano` (or whatever other editor we configured as `core.editor`)
-so that we can write a longer message.
-
-[Good commit messages][commit-messages] start with a brief (<50 characters) summary of
-changes made in the commit.  If you want to go into more detail, add
-a blank line between the summary line and your additional notes.
-
-If we run `git status` now:
-
-~~~
-$ git status
-~~~
-{: .bash}
-
-~~~
-On branch master
-nothing to commit, working directory clean
-~~~
-{: .output}
-
-it tells us everything is up to date.
-If we want to know what we've done recently,
-we can ask Git to show us the project's history using `git log`:
-
-~~~
-$ git log
-~~~
-{: .bash}
-
-~~~
-commit f22b25e3233b4645dabd0d81e651fe074bd8e73b
-Author: Vlad Dracula <vlad@tran.sylvan.ia>
-Date:   Thu Aug 22 09:51:46 2013 -0400
-
-    Start notes on Mars as a base
-~~~
-{: .output}
-
-`git log` lists all commits  made to a repository in reverse chronological order.
-The listing for each commit includes
-the commit's full identifier
-(which starts with the same characters as
-the short identifier printed by the `git commit` command earlier),
-the commit's author,
-when it was created,
-and the log message Git was given when the commit was created.
-
-> ## Where Are My Changes?
->
-> If we run `ls` at this point, we will still see just one file called `mars.txt`.
-> That's because Git saves information about files' history
-> in the special `.git` directory mentioned earlier
-> so that our filesystem doesn't become cluttered
-> (and so that we can't accidentally edit or delete an old version).
-{: .callout}
-
-Now suppose Dracula adds more information to the file.
-(Again, we'll edit with `nano` and then `cat` the file to show its contents;
-you may use a different editor, and don't need to `cat`.)
-
-~~~
-$ nano mars.txt
-$ cat mars.txt
-~~~
-{: .bash}
-
-~~~
-Cold and dry, but everything is my favorite color
-The two moons may be a problem for Wolfman
-~~~
-{: .output}
-
-When we run `git status` now,
-it tells us that a file it already knows about has been modified:
-
-~~~
-$ git status
-~~~
-{: .bash}
-
-~~~
-On branch master
+Your branch is up-to-date with 'origin/master'.
 Changes not staged for commit:
   (use "git add <file>..." to update what will be committed)
   (use "git checkout -- <file>..." to discard changes in working directory)
 
-	modified:   mars.txt
+	modified:   index.md
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ~~~
 {: .output}
+
 
 The last line is the key phrase:
 "no changes added to commit".
@@ -232,7 +85,87 @@ We have changed this file,
 but we haven't told Git we will want to save those changes
 (which we do with `git add`)
 nor have we saved them (which we do with `git commit`).
-So let's do that now. It is good practice to always review
+So let's do that now. 
+
+~~~
+$ git add index.md
+~~~
+{: .bash}
+
+And check the status
+~~~
+$ git status
+~~~
+{: .bash}
+
+~~~
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   index.md
+~~~
+{: .output}
+
+Git now knows what to save, the changes we just submitted in `index.md` are recorded in a staging area. 
+But it hasn't recorded these changes as a commit yet.
+To get it to do that,
+we need to run one more command:
+
+~~~
+$ git commit -m "Start descriptions of the dataset"
+~~~
+{: .bash}
+
+~~~
+[master f3f9619] Start descriptions of the dataset
+ 1 file changed, 1 insertion(+)
+~~~
+{: .output}
+
+When we run `git commit`,
+Git takes everything we have told it to save by using `git add`
+and stores a copy permanently inside the special `.git` directory.
+This permanent copy is called a [commit]({{ page.root }}/reference/#commit)
+(or [revision]({{ page.root }}/reference/#revision)) and its short identifier is `f3f9619`
+(Your commit may have another identifier.)
+
+We use the `-m` flag (for "message")
+to record a short, descriptive, and specific comment that will help us remember later on what we did and why.
+If we just run `git commit` without the `-m` option,
+Git will launch a text editor so that we can write a longer message.
+
+[Good commit messages][commit-messages] start with a brief (<50 characters) summary of
+changes made in the commit.  If you want to go into more detail, add
+a blank line between the summary line and your additional notes.
+
+Let's make another change to our file. At the bottom of the file we have a link to the repository. But right now the link goes to Clara's repository. Change it so that it goes to your repository. 
+
+~~~
+$ nano index.md
+~~~
+{: .bash}
+
+~~~
+# Data description
+Two types of data will be generated
+
+# Roles and responsibilities
+
+# Data standards and metadata
+
+# Storage and security
+
+# Access and data sharing
+
+# Archiving and preservation
+
+Repository with source code [here](https://github.com/username/GRAD521_DMPSurname)
+~~~
+{: .bash}
+
+It is good practice to always review
 our changes before saving them. We do this using `git diff`.
 This shows us the differences between the current state
 of the file and the most recently saved version:
@@ -243,13 +176,16 @@ $ git diff
 {: .bash}
 
 ~~~
-diff --git a/mars.txt b/mars.txt
-index df0654a..315bf3a 100644
---- a/mars.txt
-+++ b/mars.txt
-@@ -1 +1,2 @@
- Cold and dry, but everything is my favorite color
-+The two moons may be a problem for Wolfman
+diff --git a/index.md b/index.md
+index 322d170..c99e98b 100644
+--- a/index.md
++++ b/index.md
+@@ -11,4 +11,4 @@ Two types of data will be generated
+ 
+ # Archiving and preservation
+ 
+-Repository with source code [here](https://github.com/clarallebot/GRAD521_DMPtemplate)
++Repository with source code [here](https://github.com/username/GRAD521_DMPSurname)
 ~~~
 {: .output}
 
@@ -262,30 +198,29 @@ If we break it down into pieces:
     comparing the old and new versions of the file.
 2.  The second line tells exactly which versions of the file
     Git is comparing;
-    `df0654a` and `315bf3a` are unique computer-generated labels for those versions.
+    `322d170` and `c99e98b` are unique computer-generated labels for those versions.
 3.  The third and fourth lines once again show the name of the file being changed.
 4.  The remaining lines are the most interesting, they show us the actual differences
     and the lines on which they occur.
     In particular,
-    the `+` marker in the first column shows where we added a line.
+    the `+` marker in the first column shows where we added a line. The `-` marker shows where we deleted a line. 
 
 After reviewing our change, it's time to commit it:
 
 ~~~
-$ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+$ git commit -m "Change link to Repository"
 $ git status
 ~~~
 {: .bash}
 
 ~~~
 On branch master
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
 Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git checkout -- <file>..." to discard changes in working directory)
+	modified:   index.md
 
-	modified:   mars.txt
-
-no changes added to commit (use "git add" and/or "git commit -a")
+no changes added to commit
 ~~~
 {: .output}
 
@@ -294,14 +229,14 @@ Git won't commit because we didn't use `git add` first.
 Let's fix that:
 
 ~~~
-$ git add mars.txt
-$ git commit -m "Add concerns about effects of Mars' moons on Wolfman"
+$ git add index.md
+$ git commit -m "Change link to Repository"
 ~~~
 {: .bash}
 
 ~~~
-[master 34961b1] Add concerns about effects of Mars' moons on Wolfman
- 1 file changed, 1 insertion(+)
+[master d407efb] Change link to Repository
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 ~~~
 {: .output}
 
