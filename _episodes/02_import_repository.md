@@ -36,14 +36,14 @@ where Surname is your surname. It will take a minute or two to be ready.
 
 ![importform](../fig/import_importform.png)
 
-When you import a repository you are saving a copy of another repository, including files, and history. You created a new repository, and that means that you can modify it as you wish without affecting the original repository. (Of course, if you do that with other repository make sure to check the terms of use or license).
+When you import a repository you are saving a copy of another repository, including files, and history. You created a new repository, and that means that you can modify it as you wish without affecting the original repository. (Of course, if you do that with other repositories make sure to check the terms of use or license).
 
-Explore the GitHub space. The first thing you will see is that there are two files in the repository: a README.md and an index.md These are markdown files. Markdown is a language to write formatted text that is very intuitive, and that is quite useful to work in GitHub, so we will use if for this lesson. The content of the README.md file is what you see under the list of files. 
+Explore the GitHub space. The first thing you will see is that there are two files in the repository: a README.md and an index.md These are markdown files. Markdown is a language to write formatted text that is very intuitive, and that is quite useful to work in GitHub, so we will use it for this lesson. The content of the README.md file is what you see under the list of files. 
 
 ![markdownrendered](../fig/import_readmemarkdown.png)
 ![markdownplaintext](../fig/import_readmeplaintext.png)
 
-To edit files in GitHub click on the pencil on the top right of the document. When you are editing a Markdown file the file will show as plain text. You can see a few examples of how to edit Markdown in the README.md. Let's edit the README file. We will remove all the text, and add some information about what the repository will be. 
+To edit files in GitHub click on the pencil on the top right of the document. When you click the edit button you will see the document in plain text. Let's edit the README file. We will remove all the text, and add some information about what the repository will be. 
 
 ~~~
 Data Management Plan for the research project Biogeochemical model of the Columbia River Estuary.
@@ -54,13 +54,13 @@ Context of the project:
 ~~~
 {: .language-bash}
 
-Under Context of the project add the description of your research project that you wrote for the first piece of homework.
+Under Context of the project add the description of your research project that you wrote for the first piece of homework. Remember that this document is public, do not include any information that cannot be shared publicly.
 
-To save the changes you need to go to the very bottom of the page. You will have the option of including a short description and an optional extended description. You should always add a short description, and this short description should be meaningful, because this will be the metadata that will help you keep a good control of the different versions of your files.
+To save the changes go to the very bottom of the page. You have the option of including a short description and an optional extended description. You should always add a short description, and this short description should be meaningful, because this will be the metadata that will help you keep a good control of the different versions of your files.
 
 ![commitchanges](../fig/import_commit_changes.png)
 
-Let's explore the repository a little more. You will see a tab named "branches". This repository has only one branch that, by default, is named "master". We will not go over branches during this introduction, it is too short. There is also a tab named "commits". A "commit" is a different version of the content in the repository. You can modify the files, and when you are done you submit the changes as commit. GitHub shows a lot of information about each commit:
+Let's explore the repository a little more. You will see a tab named "branches". This repository has only one branch that, by default, is named "master". We will not go over branches during this lesson. There is also a tab named "commits". A "commit" is a different version of the content in the repository. You can modify the files, and when you are done you submit the changes as commit. GitHub shows a lot of information about each commit:
 * Date
 * Author
 * Description
