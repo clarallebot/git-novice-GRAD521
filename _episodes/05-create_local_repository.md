@@ -21,6 +21,8 @@ $ cd GRAD521_DMP
 ~~~
 {: .bash}
 
+In this example we will be saving the repository in our Desktop, but feel free to navigate to other directories that may be more apropriate. To navigate directories through the command line you can use the command `cd` to change directories (like we did above to get into the Desktop and GRAD521 directory) and `..` to move up a directory. The command `ls` will help you see the files and folders in the directory. 
+
 Then we tell Git to clone our remote [repository]({{ page.root }}/reference/#repository) that we created in GitHub. 
 
 ~~~
@@ -55,8 +57,7 @@ $ ls -a
 {: .output}
 
 Git stores information about the project in this special sub-directory.
-If we ever delete it,
-we will lose the project's history.
+If we ever delete it, we will lose the project's history.
 
 We can check that everything is set up correctly
 by asking Git to tell us the status of our project:
