@@ -11,7 +11,7 @@ keypoints:
 -   "Use `git config` to configure a user name, email address, editor, and other preferences once per machine."
 ---
 
-Until this moment we have used Git through GitHub. But Git and GitHub are not the same. Git is a version control software that does not need GitHub to operate. There are several other repositories that you could choose to use, like [Bitbucket](https://bitbucket.org/) or [Gitlab](https://about.gitlab.com/). 
+Until this moment we have used Git through GitHub. But Git and GitHub are not the same. Git is a version control software that does not need GitHub to operate. GitHub is a company that offers space for people to host their git repositories remotely, and has tools to use Git in the repository that do not require the use of the command line. There are several other repositories that you could choose to use, like [Bitbucket](https://bitbucket.org/) or [Gitlab](https://about.gitlab.com/). 
 
 There are many ways of using Git, and many pieces of software integrate it in their workflow. During the rest of this session, though, we are going to work with Git from the command line. It is the best way of understanding its potential, and to not be confused by the particularities of certain tools. You are not required to use the command line to edit your GitHub repository for this week's assignment. 
 
