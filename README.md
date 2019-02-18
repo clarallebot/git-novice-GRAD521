@@ -1,17 +1,11 @@
 git-novice
 ==========
 
-Modified version of nn introduction to version control for novices using Git from Software Carpentry.
-Please see <https://swcarpentry.github.io/git-novice/> for a rendered version of this material,
-[the lesson template documentation][lesson-example]
-for instructions on formatting, building, and submitting material,
-or run `make` in this directory for a list of helpful commands.
+This lesson is a modification of the [Version Control with Git](https://swcarpentry.github.io/git-novice/) lesson developed by [Software Carpentry](https://software-carpentry.org/). The official version is longer, covers more concepts, and in more detail, so take a look if you are interested in learning more. 
 
-Maintainers:
+This lesson is being taught as part of the GRAD521 Research Data Management class at Oregon State University, and has been modified from the Software Carpentry version by Clara Llebot.
 
-* [Ivan Gonzalez][gonzalez_ivan]
-* [Daisie Huang][huang_daisie]
+This lesson is licensed as [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
-[gonzalez_ivan]: http://software-carpentry.org/team/#gonzalez_ivan
-[huang_daisie]: http://software-carpentry.org/team/#huang_daisie
-[lesson-example]: https://swcarpentry.github.io/lesson-example
+Please see <  https://clarallebot.github.io/git-novice-GRAD521/> for a rendered version of this material.
+
