@@ -7,5 +7,5 @@ This lesson is being taught as part of the GRAD521 Research Data Management clas
 
 This lesson is licensed as [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
-Please see <  https://clarallebot.github.io/git-novice-GRAD521/> for a rendered version of this material.
+Please see https://clarallebot.github.io/git-novice-GRAD521/ for a rendered version of this material.
 
