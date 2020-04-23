@@ -28,7 +28,26 @@ https://username.github.io/GRAD521_DMPSurname_2019
 ~~~
 {: .language-bash}
 
-Now visit the website. It should look like this:
+Let's create some content for this website. Go back to the <> Code section of your repository, and click on "Create a new file". 
+
+![websitenewfile](../fig/pages_createnewfile.png)
+
+Give the file the name index.md and enter some content:
+
+
+~~~
+# Data Description
+# Roles and responsibilities
+# Data standards and metadata
+# Storage and security
+# Access and data sharing
+# Archiving and preservation
+~~~
+{: .language-bash}
+
+Make sure that you include a commit message when you save. 
+
+Now visit the website that we copied when we activated GitHub pages. It should look like this:
 
 ![websiteinitialview](../fig/pages_websiteinitialview.png)
 
