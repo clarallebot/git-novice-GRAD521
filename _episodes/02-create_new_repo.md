@@ -19,29 +19,29 @@ We can start repositories in many different ways. We could create a local reposi
 
 Sign in to https://www.github.com If you don't have an account, create one. 
 
-Now click on the "+" icon, on the upper right, and select Import repository. 
+Now click on the "+" icon, on the upper right, and select New repository. 
 
-![importbutton](../fig/import_importbutton.png)
+![newbutton](../fig/new_newbutton.png)
 
-Under "Your old repository’s clone URL" add the URL of the repository. Choose a Public repository. Give it a name following this file naming convention: 
+Choose a Public repository. Name the repository following this file naming convention: 
 
 ~~~
-GRAD521_DMPSurname_2019 
+GRAD521_DMPSurname_2020 
 ~~~
 {: .language-bash}
 
-where Surname is your surname. It will take a minute or two to be ready.
+where Surname is your surname. 
 
-![importform](../fig/import_importform.png)
+Make sure that you tick the option Initialize this repository with a README
 
-When you import a repository you are saving a copy of another repository, including files, and history. You created a new repository, and that means that you can modify it as you wish without affecting the original repository. (Of course, if you do that with other repositories make sure to check the terms of use or license).
+It will take a minute or two to be ready.
 
-Explore the GitHub space. The first thing you will see is that there are two files in the repository: a README.md and an index.md These are markdown files. Markdown is a language to write formatted text that is very intuitive, and that is quite useful to work in GitHub, so we will use it for this lesson. The content of the README.md file is what you see under the list of files. 
+![importform](../fig/new_initializerepo.png)
 
-![markdownrendered](../fig/import_readmemarkdown.png)
-![markdownplaintext](../fig/import_readmeplaintext.png)
 
-To edit files in GitHub click on the pencil on the top right of the document. When you click the edit button you will see the document in plain text. Let's edit the README file. We will remove all the text, and add some information about what the repository will be. 
+Explore the GitHub space. The first thing you will see is that there is one file in the repository: a README.md This is a markdown file. Markdown is a language to write formatted text that is very intuitive, and that is quite useful to work in GitHub, so we will use it a little bit for this lesson. The content of the README.md file is what you see under the list of files. At this point the automatic readme has only the name of the repo. 
+
+Let's edit the README file. We will add some information about what the repository will be. 
 
 ~~~
 Data Management Plan for the research project Biogeochemical model of the Columbia River Estuary.
@@ -52,7 +52,7 @@ Context of the project:
 ~~~
 {: .language-bash}
 
-Under Context of the project add the description of your research project that you wrote for the first piece of homework. Remember that this document is public, do not include any information that cannot be shared publicly.
+Under Context of the project add the description of your research project that you wrote for the assignment DMP Part 1. Remember that this document is public, do not include any information that cannot be shared publicly.
 
 To save the changes go to the very bottom of the page. You have the option of including a short description and an optional extended description. You should always add a short description, and this short description should be meaningful, because this will be the metadata that will help you keep a good control of the different versions of your files.
 
