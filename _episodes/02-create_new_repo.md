@@ -71,13 +71,24 @@ Type the new name, and click on "Rename branch". Common possibilities for your n
 
 ![renamebranch](../fig/rename_branch.png)
 
-We will not go over branches during this lesson. There is also a tab named "commits". A "commit" is a different version of the content in the repository. You can modify the files, and when you are done you submit the changes as commit. GitHub shows a lot of information about each commit:
+We will not go over details about how to use branches in GitHub during this lesson. 
+
+Let's explore the version control of capabilities a bit more. Click on the readme file again, and chose the pencil icon on the right to edit it. 
+
+![editreadmefile](../fig/edit_readme_file.png)
+
+Add a line to the file. Add a commit message and Commit changes. 
+
+A "commit" is a different version of the content in the repository. Version control software saves a lot of information about your code every time you commit: 
 * Date
 * Author
 * Description
 * Unique identifier for the commit
+Let's find this information in GitHub. Navigate to your main project page again. You can do that by clicking on the name of your project, the blue link at the top of the page. Now find the "commits" button. It is on the pale blue bar, next to the clock symbol. 
 
-Clicking on the commit also shows us a visualization of the changes that were made on this particular commit. 
+![commitsbutton](../fig/commits_button.png)
+
+When you click on it you will find a list of the different commits that were done on the files of the repository. Clicking on the commit also shows us a visualization of the changes that were made on this particular commit. 
 
 
 
