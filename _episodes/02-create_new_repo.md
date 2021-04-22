@@ -58,7 +58,20 @@ To save the changes go to the very bottom of the page. You have the option of in
 
 ![commitchanges](../fig/import_commit_changes.png)
 
-Let's explore the repository a little more. You will see a tab named "branches". This repository has only one branch that, by default, is named "master". We will not go over branches during this lesson. There is also a tab named "commits". A "commit" is a different version of the content in the repository. You can modify the files, and when you are done you submit the changes as commit. GitHub shows a lot of information about each commit:
+Let's explore the repository a little more. You will see a tab named "branches". This repository has only one branch that, by default, is named "master". 
+Since this default name has racist connotations let's change it to "main" instead. Find the branches tab, and click on the little triangle. Then click on "View all branches". 
+
+![viewallbranches](../fig/view_all_branches.png)
+
+Find the pencil button next to the branch "master" and click it. 
+
+![penciltoeditbranchname](../fig/pencil_to_edit_branch_name.png)
+
+Type the new name, and click on "Rename branch". Common possibilities for your new branch are "main", or "development" or "trunk". You can chose any name you want. 
+
+![renamebranch](../fig/rename_branch.png)
+
+We will not go over branches during this lesson. There is also a tab named "commits". A "commit" is a different version of the content in the repository. You can modify the files, and when you are done you submit the changes as commit. GitHub shows a lot of information about each commit:
 * Date
 * Author
 * Description
