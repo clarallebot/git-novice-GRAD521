@@ -39,11 +39,11 @@ https://username.github.io/GRAD521_DMPSurname_YYYY
 ~~~
 {: .language-bash}
 
-Let's create some content for this website. Go back to the <> Code section of your repository, and click on "Create a new file". 
+Right now if you navigate to the website, you will see the contents of the readme, because it is the only file in our repository. Let's create some content for this website. Go back to the <> Code section of your repository, and click on "Add file" and "Create new file". 
 
-![websitenewfile](../fig/pages_createnewfile.png)
+![createnewfile](../fig/create_new_file.png)
 
-Give the file the name index.md and enter some content:
+Give the file the name index.md. Make sure that you name your file exactly index.md, the first letter must be lower case or it won't work. Enter some content:
 
 
 ~~~
@@ -55,6 +55,7 @@ Give the file the name index.md and enter some content:
 # Archiving and preservation
 ~~~
 {: .language-bash}
+
 
 Make sure that you include a commit message when you save. 
 
@@ -70,6 +71,13 @@ Now go back to your repository and look at the file index.md This is the file th
 > > Sections are designated with `#` signs. Add more to create subsections (`##`, and `###`...) 
 > {: .solution}
 {: .challenge}
+
+In this document we are using a little bit of Markdown. The pound sign means that each of these sentences will be a section. You don't need to do any fancy editing for this assignment, but here are some Markdown instructions that may be useful:
+
+- Make sure that you leave a space between the pound sign and the text, otherwise it won't work.
+- If you want to add subsections you can do so by adding two pound signs instead of one. 
+- To add a new paragraph you need to leave an empty blank line.
+- Here is a [Markdown cheat sheet for GitHub](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). 
 
 When you make a change in the files of your repository, the change will be transfered to the website. It does take some time (a few minutes) for the changes to appear in the website, so do not be surprised if you do not see your most recent changes right away. 
 
