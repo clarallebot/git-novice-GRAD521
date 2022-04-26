@@ -12,19 +12,30 @@ keypoints:
 
 You can use GitHub to host a website. This does not have much to do with version control at all, but it is a nice feature of GitHub that we will use in this particular project.
 
-Locate the "Settings" tab in your project, and then navigate to GitHub pages. In this case, you imported the repository and this setting was already activated. If you had started the repository from scratch you would have needed to activate it. What we can see in this section is that GitHub will use the files in the "master" branch (the only one we have so far) to render the website. We have not chosen any Jeckyll themes, and we have not created a custom domain. Feel free to play with these.
+Locate the "Settings" tab in your project, and then navigate to Pages on the left hand side menu. 
 
-![pagessettings](../fig/pages_settings.png)
+![settingstab](../fig/settings_tab.png)
 
-The most important piece of information at this point is at the top of the section, where it says "Your site is published at". Copy the URL. Now navigate to the home page of your project, and click on the "Edit" button under the tabs. Include a short description of your project, and paste the URL on the Website space. 
+![pagestab](../fig/pages_tab.png)
 
-![websiteURL](../fig/pages_websiteURL.png)
+To activate GitHub Pages, so that GitHub will create a website from this repository, we need to chose our "main" branch as the source. We have not chosen any Jeckyll themes, and we have not created a custom domain. Feel free to play with these, but it is not a requirement of this class to make your page beautiful.
 
+![pagestab](../fig/pages_main_branch.png)
+
+After saving it, GitHub will tell us the name of the website where the repository will be rendered, where it says "Your site is published at". Copy the URL. 
+
+![pagestab](../fig/pages_main_branch2.png)
+
+
+Now navigate to the home page of your project, and edit the "About" section. Paste the URL on the Website space. If you wish to include a short description of your project you can also do it here.
+
+![about](../fig/about.png)
+![aboutdescription](../fig/about_description.png)
 
 This is just a handy place where to keep the URL of your website. The structure of your website will be something like
 
 ~~~
-https://username.github.io/GRAD521_DMPSurname_2019
+https://username.github.io/GRAD521_DMPSurname_YYYY
 ~~~
 {: .language-bash}
 
