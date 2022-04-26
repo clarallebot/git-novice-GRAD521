@@ -61,7 +61,7 @@ Make sure that you include a commit message when you save.
 
 Now visit the website that we copied when we activated GitHub pages. It should look like this:
 
-![websiteinitialview](../fig/pages_websiteinitialview.png)
+![websiteinitialview](../fig/pages_websiteinitialview_yyyy.png)
 
 Now go back to your repository and look at the file index.md This is the file that is being shown in the website. Not that beautiful (yet), but the information is there. 
 
