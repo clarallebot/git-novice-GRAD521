@@ -58,7 +58,7 @@ Under Context of the project add the description of your research project that y
 
 ![editreadme2](../fig/edit_readme_2.png)
 
-To save the changes go to the very bottom of the page. You have the option of including a short description and an optional extended description. It is very important to always add a short description, and this short description should be meaningful, because this will be the metadata that will help you keep a good control of the different versions of your files. So, avoid vague messages like "update file".
+To save the changes go to the very bottom of the page. You have the option of including a short description and an optional extended description. It is very important to always add a short description, and this short description should be meaningful, because this will be the metadata that will help you keep a good control of the different versions of your files. Avoid vague messages like "update file".
 
 ![commitchanges](../fig/import_commit_changes.png)
 
@@ -72,15 +72,15 @@ Find the pencil button next to the branch name and click it.
 
 ![penciltoeditbranchname](../fig/pencil_to_edit_branch_name.png)
 
-Type the new name, and click on "Rename branch". Common possibilities for your new branch are "main", or "development" or "trunk". You can chose any name you want. 
+Type the new name, and click on "Rename branch". Common possibilities for your new branch are "development" or "trunk". You can chose any name you want. 
 
 ![renamebranch](../fig/rename_branch.png)
 
 We will not go over details about how to use branches in GitHub during this lesson. 
 
-Let's explore the version control of capabilities a bit more. Click on the readme file again, and chose the pencil icon on the right to edit it. 
+Let's explore the version control of capabilities a bit more. Edit the readme again.  
 
-![editreadmefile](../fig/edit_readme_file.png)
+![editreadmefile](../fig/edit_readme_1.png)
 
 Add a line to the file. Add a commit message and Commit changes. 
 
@@ -93,9 +93,13 @@ Let's find this information in GitHub. Navigate to your main project page again.
 
 ![commitsbutton](../fig/commits_button.png)
 
-When you click on it you will find a list of the different commits that were done on the files of the repository. Clicking on the commit also shows us a visualization of the changes that were made on this particular commit. 
+When you click on it you will find a list of the different commits that were done on the files of the repository. Each of the commits shows clearly who commited each change, when, and the commit message that was entered. Each commit also has a collection of letters and numbers that is a unique identifyer. We will not talk about going back to previous versions in this lesson, but it is a capability of Git. 
 
+![listofcommits](../fig/list_of_commits.png)
 
+Clicking on the commit also shows us a visualization of the changes that were made on this particular commit. In red, with a preceeding minus "-" you will see the lines that have been deleted. In green, with a preceeding plus "+" you will see the lines that have been added. In white you will see the lines that have not changed. 
+
+![commitchanges](../fig/commit_changes.png)
 
 
 
