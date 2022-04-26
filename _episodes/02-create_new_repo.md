@@ -26,13 +26,13 @@ Now click on the "+" icon, on the upper right, and select New repository.
 Choose a Public repository. Name the repository following this file naming convention: 
 
 ~~~
-GRAD521_DMPSurname_2020 
+GRAD521_DMPSurname_YYYY 
 ~~~
 {: .language-bash}
 
-where Surname is your surname. 
+where Surname is your surname. And YYYY is the year you are taking this class (e.g. 2020).
 
-Make sure that you tick the option Initialize this repository with a README
+Make sure that you tick the option Initialize this repository with a README.
 
 It will take a minute or two to be ready.
 
@@ -41,7 +41,9 @@ It will take a minute or two to be ready.
 
 Explore the GitHub space. The first thing you will see is that there is one file in the repository: a README.md This is a markdown file. Markdown is a language to write formatted text that is very intuitive, and that is quite useful to work in GitHub, so we will use it a little bit for this lesson. The content of the README.md file is what you see under the list of files. At this point the automatic readme has only the name of the repo. 
 
-Let's edit the README file. We will add some information about what the repository will be. 
+Let's edit the README file. We will add some information about what the repository will be. Click on the pencil icon on the top right of the page. 
+
+![editreadme](../fig/edit_readme_1.png)
 
 ~~~
 Data Management Plan for the research project Biogeochemical model of the Columbia River Estuary.
@@ -54,16 +56,19 @@ Context of the project:
 
 Under Context of the project add the description of your research project that you wrote for the assignment DMP Part 1. Remember that this document is public, do not include any information that cannot be shared publicly.
 
-To save the changes go to the very bottom of the page. You have the option of including a short description and an optional extended description. You should always add a short description, and this short description should be meaningful, because this will be the metadata that will help you keep a good control of the different versions of your files.
+![editreadme2](../fig/edit_readme_2.png)
+
+To save the changes go to the very bottom of the page. You have the option of including a short description and an optional extended description. It is very important to always add a short description, and this short description should be meaningful, because this will be the metadata that will help you keep a good control of the different versions of your files. So, avoid vague messages like "update file".
 
 ![commitchanges](../fig/import_commit_changes.png)
 
-Let's explore the repository a little more. You will see a tab named "branches". This repository has only one branch that, by default, is named "master". 
-Since this default name has racist connotations let's change it to "main" instead. Find the branches tab, and click on the little triangle. Then click on "View all branches". 
+Let's explore the repository a little more. You will see a tab named "main". This is where you see the branches that you have in the repository. In this case there is only one branch that, by default, is named "main". When you work with other repositories you may encounter other default branch names. For example, "master" used to be the default repository name, and still used by many. This term evokes the racist practice of human slavery and the [software development community](https://github.com/github/renaming) has moved to adopt more inclusive language. 
+
+If you want to change the name of the branch you can do so by clicking on the little triangle next to the branch name and click on "view all branches".
 
 ![viewallbranches](../fig/view_all_branches.png)
 
-Find the pencil button next to the branch "master" and click it. 
+Find the pencil button next to the branch name and click it. 
 
 ![penciltoeditbranchname](../fig/pencil_to_edit_branch_name.png)
 
