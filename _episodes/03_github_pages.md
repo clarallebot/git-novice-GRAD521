@@ -14,9 +14,9 @@ You can use GitHub to host a website. This does not have much to do with version
 
 Locate the "Settings" tab in your project, and then navigate to Pages on the left hand side menu. 
 
-![settingstab](../fig/settings_tab.png)
+![settingstab](../fig/2026_settings_tab.png)
 
-![pagestab](../fig/pages_tab.png)
+![pagestab](../fig/2026_pages_tab.png)
 
 To activate GitHub Pages, so that GitHub will create a website from this repository, we need to chose our "main" branch as the source. We have not chosen any Jeckyll themes, and we have not created a custom domain. Feel free to play with these, but it is not a requirement of this class to make your page beautiful.
 
@@ -41,7 +41,7 @@ https://username.github.io/GRAD521_DMPSurname_YYYY
 
 Right now if you navigate to the website, you will see the contents of the readme, because it is the only file in our repository. Let's create some content for this website. Go back to the <> Code section of your repository, and click on "Add file" and "Create new file". 
 
-![createnewfile](../fig/create_new_file.png)
+![createnewfile](../fig/2026_create_new_file.png)
 
 Give the file the name index.md. Make sure that you name your file exactly index.md, the first letter must be lower case or it won't work. Enter some content:
 
