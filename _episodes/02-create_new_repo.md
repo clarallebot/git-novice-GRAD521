@@ -21,7 +21,7 @@ Sign in to https://www.github.com If you don't have an account, create one.
 
 Now click on the "+" icon, on the upper right, and select New repository. 
 
-![newbutton](../fig/2026_new_newbutton.png)
+![newbutton](../fig/2026_newbutton.png)
 
 Choose a Public repository. Name the repository following this file naming convention: 
 
@@ -36,7 +36,7 @@ Make sure that you tick the option Initialize this repository with a README.
 
 It will take a minute or two to be ready.
 
-![importform](../fig/2026_new_initializerepo.png)
+![importform](../fig/2026_initializerepo.png)
 
 
 Explore the GitHub space. The first thing you will see is that there is one file in the repository: a README.md This is a markdown file. Markdown is a language to write formatted text that is very intuitive, and that is quite useful to work in GitHub, so we will use it a little bit for this lesson. The content of the README.md file is what you see under the list of files. At this point the automatic readme has only the name of the repo. 
