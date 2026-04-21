@@ -21,7 +21,7 @@ Sign in to https://www.github.com If you don't have an account, create one.
 
 Now click on the "+" icon, on the upper right, and select New repository. 
 
-![newbutton](../fig/new_newbutton.png)
+![newbutton](../fig/2026_new_newbutton.png)
 
 Choose a Public repository. Name the repository following this file naming convention: 
 
@@ -36,14 +36,14 @@ Make sure that you tick the option Initialize this repository with a README.
 
 It will take a minute or two to be ready.
 
-![importform](../fig/new_initializerepo.png)
+![importform](../fig/2026_new_initializerepo.png)
 
 
 Explore the GitHub space. The first thing you will see is that there is one file in the repository: a README.md This is a markdown file. Markdown is a language to write formatted text that is very intuitive, and that is quite useful to work in GitHub, so we will use it a little bit for this lesson. The content of the README.md file is what you see under the list of files. At this point the automatic readme has only the name of the repo. 
 
 Let's edit the README file. We will add some information about what the repository will be. Click on the pencil icon on the top right of the page. 
 
-![editreadme](../fig/edit_readme_1.png)
+![editreadme](../fig/2026_edit_readme_1.png)
 
 ~~~
 Data Management Plan for the research project Biogeochemical model of the Columbia River Estuary.
@@ -56,11 +56,11 @@ Context of the project:
 
 Under Context of the project add the description of your research project that you wrote for the assignment DMP Part 1. Remember that this document is public, do not include any information that cannot be shared publicly.
 
-![editreadme2](../fig/edit_readme_2.png)
+![editreadme2](../fig/2026_edit_readme_2.png)
 
 To save the changes go to the very bottom of the page. You have the option of including a short description and an optional extended description. It is very important to always add a short description, and this short description should be meaningful, because this will be the metadata that will help you keep a good control of the different versions of your files. Avoid vague messages like "update file".
 
-![commitchanges](../fig/import_commit_changes.png)
+![commitchanges](../fig/2026_import_commit_changes.png)
 
 Let's explore the repository a little more. You will see a tab named "main". This is where you see the branches that you have in the repository. In this case there is only one branch that, by default, is named "main". When you work with other repositories you may encounter other default branch names. For example, "master" used to be the default repository name, and still used by many. This term evokes the racist practice of human slavery and the [software development community](https://github.com/github/renaming) has moved to adopt more inclusive language. 
 
@@ -80,7 +80,7 @@ We will not go over details about how to use branches in GitHub during this less
 
 Let's explore the version control of capabilities a bit more. Edit the readme again.  
 
-![editreadmefile](../fig/edit_readme_1.png)
+![editreadmefile](../fig/2026_edit_readme_3.png)
 
 Add a line to the file. Add a commit message and Commit changes. 
 
@@ -89,9 +89,9 @@ A "commit" is a different version of the content in the repository. Version cont
 * Author
 * Description
 * Unique identifier for the commit
-Let's find this information in GitHub. Navigate to your main project page again. You can do that by clicking on the name of your project, the blue link at the top of the page. Now find the "commits" button. It is on the pale blue bar, next to the clock symbol. 
+Let's find this information in GitHub. Navigate to your main project page again. You can do that by clicking on the name of your project, the blue link at the top of the page. Now find the "history" button. It is on the top right of the preview window, next to the clock symbol. 
 
-![commitsbutton](../fig/commits_button.png)
+![historybutton](../fig/2026_history_button.png)
 
 When you click on it you will find a list of the different commits that were done on the files of the repository. Each of the commits shows clearly who commited each change, when, and the commit message that was entered. Each commit also has a collection of letters and numbers that is a unique identifyer. We will not talk about going back to previous versions in this lesson, but it is a capability of Git. 
 
