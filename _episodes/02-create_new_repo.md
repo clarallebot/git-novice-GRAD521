@@ -95,11 +95,11 @@ Let's find this information in GitHub. Navigate to your main project page again.
 
 When you click on it you will find a list of the different commits that were done on the files of the repository. Each of the commits shows clearly who commited each change, when, and the commit message that was entered. Each commit also has a collection of letters and numbers that is a unique identifyer. We will not talk about going back to previous versions in this lesson, but it is a capability of Git. 
 
-![listofcommits](../fig/list_of_commits.png)
+![listofcommits](../fig/2026_list_of_commits.png)
 
 Clicking on the commit also shows us a visualization of the changes that were made on this particular commit. In red, with a preceeding minus "-" you will see the lines that have been deleted. In green, with a preceeding plus "+" you will see the lines that have been added. In white you will see the lines that have not changed. 
 
-![commitchanges](../fig/commit_changes.png)
+![commitchanges](../fig/2026_commit_changes.png)
 
 
 
